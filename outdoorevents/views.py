@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Event
 
-def outdoorevents(request):
-    return HttpResponse("Hello World")
+
+class EventList(generic.ListView):
+    queryset = Event.objects.all()
+    template_name = "event_list.html"
