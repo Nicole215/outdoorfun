@@ -15,7 +15,8 @@
                         <div class="card-body">
                             <div class="image-container">
                             </div>
-                            <a href="#" class="post-link">
+                            <!-- Link to Organisator detail -->
+                            <a href="{% url 'organisator_detail' pk=event.organisator.pk %}" class="post-link">
                                 <h3 class="card-title">{{ event.organisator.name }}</h3>
                             </a>
 

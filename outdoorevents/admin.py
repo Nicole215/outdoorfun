@@ -4,7 +4,7 @@ from .models import Organisator, Event
 
 @admin.register(Organisator)
 class OrganisatorAdmin(admin.ModelAdmin):
-    list_display = ('name',)
+    list_display = ('name', 'contact_info', 'image')
 
 
 @admin.register(Event)
