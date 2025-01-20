@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ post.title }}</h1>
+
+  <p>{{ post.content }}</p>
+  <p><strong>Posted on:</strong> {{ post.created_at }}</p>
+
+  <hr>
+  
+  {% if user == post.author %}
+    <a href="{% url 'edit_post' slug=post.slug %}" class="btn btn-warning">Edit</a>
+    <a href="{% url 'delete_post' slug=post.slug %}" class="btn btn-danger">Delete</a>
+  {% endif %}
+  
+  <a href="{% url 'forum_post_list' %}" class="btn btn-secondary">Back to List</a>
+{% endblock %}
+ 
