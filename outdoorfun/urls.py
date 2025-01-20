@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('forum/', include('forum.urls')),  # Include the forum app's URLs
     path('', include('outdoorevents.urls')),
+    path('faqs/', include('faqs.urls')),
 ]
