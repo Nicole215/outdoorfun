@@ -1,12 +1,17 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 <div class="container">
     <h1>Create a New Post</h1>
-    <form method="post">
+    <form method="post" id="addPostForm">
         {% csrf_token %}
        {{ form.as_p }}
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>
+{% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/forum.js' %}"></script>
 {% endblock %}
