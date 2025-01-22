@@ -1,11 +1,12 @@
 from django.db import models
 from django.utils.text import slugify
+from cloudinary.models import CloudinaryField
 
 
 class Organisator(models.Model):
     name = models.CharField(max_length=100, unique=True)
     contact_info = models.TextField(blank=True, null=True)  # Add general information
-    image = models.ImageField(blank=True, null=True)
+    image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return self.name

@@ -9,7 +9,7 @@
                 <h1 class="post-title">{{ organisator.name }}</h1>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% if event.organisator.image %}{{ event.organisator.image.url }}{% else %}/static/images/default.jpg{% endif %}" alt="{{ organisator.name }}" style="max-width: 200px;">
+                <img src="{% if organisator.image %}{{ organisator.image.url }}{% else %}/static/images/default.jpg{% endif %}" alt="{{ organisator.name }}" style="max-width: 200px;">
             </div>
         </div>
     </div>
