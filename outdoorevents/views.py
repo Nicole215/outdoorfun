@@ -5,7 +5,7 @@ from .models import Event, Organisator
 
 
 class EventList(generic.ListView):
-    queryset = Event.objects.all()
+    queryset = Event.objects.all().order_by('date')  # Order events by date
     template_name = "outdoorevents/index.html"
     paginate_by = 6
 
