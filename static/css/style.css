@@ -24,7 +24,7 @@ body {
 }
 
 .link {
-    color: #23BBBB;
+    color: #524439;
     text-decoration: none;
 }
 
@@ -35,7 +35,8 @@ body {
 }
 
 /* main content */
-.organisator-link {
+.organisator-link,
+.page-link {
     text-decoration: none;
     color: #524439;
 }
@@ -50,7 +51,8 @@ body {
     background-color: transparent;
 }
 
-.card-text {
+.card-text,
+.card-body {
     font-weight: 400;
     color: #524439;
 }
@@ -107,15 +109,17 @@ body {
 }
 
 .btn-signup,
-.btn-edit {
-    background-color: #188181;
+.btn-edit,
+.btn-search,
+.btn-secondary {
+    background-color: #524439;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #c6a58a;
 }
 
 .btn-like {
@@ -136,12 +140,9 @@ body {
     border: none;
 }
 
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
+/* FAQs */
+.faq-title {
+    color: #524439;
 }
 
 /* Footer */
