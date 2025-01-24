@@ -1,6 +1,6 @@
 
 body {
-    background-color: #F9FAFC;
+    background-color: #D8D4D1;
 }
 
 /* header */
@@ -23,21 +23,36 @@ body {
     font-weight: 300;
 }
 
-.light-bg {
-    background-color: #fff;
+.link {
+    color: #23BBBB;
+    text-decoration: none;
 }
 
-.dark-bg {
-    background-color: #445261;
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
+/* main content */
+.organisator-link {
+    text-decoration: none;
+    color: #524439;
+}
+
+.organisator-link:hover {
+    text-decoration: none;
+    color: #c6a58a;
 }
 
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-text {
+    font-weight: 400;
+    color: #524439;
 }
 
 .image-container {
@@ -67,7 +82,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #524439;
     color: white;
     position: relative;
 }
@@ -81,24 +96,14 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    right: 90%;
     height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
+    background: #524439;
     z-index: 100;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
+.organisator {
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .btn-signup,
@@ -111,17 +116,6 @@ body {
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
 }
 
 .btn-like {
