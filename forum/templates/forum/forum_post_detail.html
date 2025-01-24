@@ -4,7 +4,8 @@
 
 
 {% block content %}
-  <h1>{{ post.title }}</h1>
+<div class="container mt-4">
+  <h4>{{ post.title }}</h4>
 
   <p>{{ post.content }}</p>
   <p><strong>Posted on:</strong> {{ post.created_at }}</p>
@@ -12,14 +13,14 @@
   <hr>
   
   {% if user == post.author %}
-    <a href="{% url 'edit_post' slug=post.slug %}" class="btn btn-warning">Edit</a>
+    <a href="{% url 'edit_post' slug=post.slug %}" class="btn btn-edit">Edit</a>
     <a href="{% url 'delete_post' slug=post.slug %}" class="btn btn-danger">Delete</a>
   {% endif %}
   
   <a href="{% url 'forum_post_list' %}" class="btn btn-secondary">Back to List</a>
 
   <hr>
-  <h3>Comments:</h3>
+  <h5>Comments:</h5>
 
   {% for comment in post.comments.all %}
     <div class="comment">
@@ -27,7 +28,7 @@
       <p><em>Posted on: {{ comment.created_at }}</em></p>
 
       {% if comment.author == user %}
-        <a href="{% url 'edit_comment' comment.id %}" class="btn btn-warning">Edit</a>
+        <a href="{% url 'edit_comment' comment.id %}" class="btn btn-edit">Edit</a>
         <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger">Delete</a>
       {% endif %}
     </div>
@@ -37,7 +38,8 @@
   {% endfor %}
 
   <hr>
-  <h3>Add a comment:</h3>
-  <a href="{% url 'add_comment' post.slug %}" class="btn btn-primary">Add Comment</a>
+  <h5>Add a comment:</h5>
+  <a href="{% url 'add_comment' post.slug %}" class="btn btn-create">Add Comment</a>
+</div>
 {% endblock %}
  

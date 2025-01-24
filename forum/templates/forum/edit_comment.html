@@ -3,14 +3,16 @@
 
 
 {% block content %}
-  <h1>Edit Your Comment</h1>
+<div class="container mt-4">
+  <h3>Edit Your Comment</h3>
 
   <form method="post">
     {% csrf_token %}
     {{ form|crispy }}
-    <button type="submit" class="btn btn-warning">Update Comment</button>
+    <button type="submit" class="btn btn-edit">Update Comment</button>
   </form>
 
   <hr>
   <a href="{% url 'forum_post_detail' comment.post.slug %}" class="btn btn-secondary">Back to Post</a>
+</div>
 {% endblock %}
