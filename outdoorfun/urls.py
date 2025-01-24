@@ -27,3 +27,5 @@ urlpatterns = [
     path('', include('outdoorevents.urls')),
     path('faqs/', include('faqs.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+handler404 = 'django.views.defaults.page_not_found'
