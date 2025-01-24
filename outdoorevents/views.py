@@ -6,30 +6,47 @@ from django.db.models import Q
 
 
 class EventList(generic.ListView):
+    """
+    View to display paginated list of events.
+    Includes search functionality to filter events by type, town, country,
+    or organisator's name.
+    """
     model = Event
     template_name = "outdoorevents/index.html"
     context_object_name = "event_list"
     paginate_by = 6
 
     def get_queryset(self):
-        queryset = Event.objects.all().order_by("date")  # Default to all events, ordered by date
-        query = self.request.GET.get("q") # Get the search query from the URL
+        """
+        Returns a filtered queryset of events.
+        If a search query ('q') is provided in the URL parameters, filters
+        events based on event type, town, country, or organisator's name.
+        Otherwise, returns all events ordered by date.
+        """
+        queryset = Event.objects.all().order_by("date")  # Default queryset
+        query = self.request.GET.get("q")  # Get the search query
         if query:
             queryset = queryset.filter(
-                Q(event_type__icontains=query) | 
-                Q(town__icontains=query) | 
+                Q(event_type__icontains=query) |
+                Q(town__icontains=query) |
                 Q(country__icontains=query) |
                 Q(organisator__name__icontains=query)
             )
         return queryset
 
     def get_context_data(self, **kwargs):
+        """
+        Adds the search query ('q') to the context for use in the template.
+        """
         context = super().get_context_data(**kwargs)
-        context["query"] = self.request.GET.get("q", "")  # Pass the query to the template
+        context["query"] = self.request.GET.get("q", "")
         return context
 
 
 class OrganisatorDetailView(DetailView):
+    """
+    View to display details of a specific organiser.
+    """
     model = Organisator
     template_name = 'outdoorevents/organisator_detail.html'
     context_object_name = 'organisator'

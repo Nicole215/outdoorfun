@@ -4,6 +4,9 @@ from django.utils.text import slugify
 
 
 class ForumPost(models.Model):
+    """
+    Represents a forum post created by a user.
+    """
     title = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
@@ -12,6 +15,10 @@ class ForumPost(models.Model):
     slug = models.SlugField(unique=True, blank=True)
 
     def save(self, *args, **kwargs):
+        """
+        Saves the forum post instance to the database.
+        Automatically generates a unique slug.
+        """
         if not self.slug:
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
@@ -21,7 +28,11 @@ class ForumPost(models.Model):
 
 
 class ForumComment(models.Model):
-    post = models.ForeignKey(ForumPost, on_delete=models.CASCADE, related_name="comments")
+    """
+    Represents a comment on a forum post.
+    """
+    post = models.ForeignKey(ForumPost, on_delete=models.CASCADE,
+                             related_name="comments")
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

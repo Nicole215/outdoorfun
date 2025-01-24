@@ -9,7 +9,8 @@ class OrganisatorAdmin(admin.ModelAdmin):
 
     def display_image(self, obj):
         if obj.image:  # Check if the Organisator has an image
-            return format_html(f'<img src="{obj.image.url}" style="max-height: 50px;">')
+            return format_html(
+                f'<img src="{obj.image.url}" style="max-height: 50px;">')
         return "No Image"
 
     display_image.short_description = "Image"
@@ -17,6 +18,7 @@ class OrganisatorAdmin(admin.ModelAdmin):
 
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
-    list_display = ('organisator', 'event_type', 'town', 'country', 'date', 'slug')
+    list_display = ('organisator', 'event_type', 'town', 'country',
+                    'date', 'slug')
     list_filter = ('event_type', 'town', 'country', 'date')
     search_fields = ('organisator__name', 'town', 'country', 'event_type')
