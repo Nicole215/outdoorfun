@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -24,4 +26,4 @@ urlpatterns = [
     path('forum/', include('forum.urls')),  # Include the forum app's URLs
     path('', include('outdoorevents.urls')),
     path('faqs/', include('faqs.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
