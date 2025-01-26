@@ -50,3 +50,12 @@ class OrganisatorDetailView(DetailView):
     model = Organisator
     template_name = 'outdoorevents/organisator_detail.html'
     context_object_name = 'organisator'
+
+    def get_context_data(self, **kwargs):
+        """
+        Add a sorted list of events related to the organisator to the context.
+        """
+        context = super().get_context_data(**kwargs)
+        # Order events by date
+        context['events'] = self.object.events.all().order_by('date')
+        return context

@@ -28,7 +28,7 @@
 
                     <h2>Events</h2>
                     <ul>
-                        {% for event in organisator.events.all %}
+                        {% for event in events %}
                             <li>{{ event.town }} - {{ event.date }} - {{ event.event_type }}</li>
                         {% empty %}
                             <p>No events available for this organisator.</p>
