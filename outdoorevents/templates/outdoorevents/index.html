@@ -6,13 +6,8 @@
 <div class="container mt-4">
     <form method="get" action="{% url 'event_list' %}" class="mb-4">
         <div class="input-group">
-            <input 
-                type="text" 
-                name="q" 
-                value="{{ query }}" 
-                class="form-control" 
-                placeholder="Search by event type, town, country or organizer..."
-            />
+            <input type="text" name="q" value="{{ query }}" class="form-control"
+                placeholder="Search by event type, town, country or organizer...">
             <button type="submit" class="btn btn-search">Search</button>
         </div>
     </form>
@@ -36,7 +31,7 @@
                                 <h3 class="card-title">{{ event.organisator.name }}</h3>
                             </a>
 
-                            <hr />
+                            <hr>
                             <p class="card-text h6">{{ event.date }}
                             </p>
                             <p class="card-text h6">{{ event.town }}
@@ -63,8 +58,7 @@
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
             <li>
-            <a href="?q={{ query }}&page={{ page_obj.previous_page_number }}"
-            class="page-link">&laquo; PREV</a>
+                <a href="?q={{ query }}&page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
             </li>
             {% endif %}
             {% if page_obj.has_next %}

@@ -11,14 +11,14 @@
 {% endblock %}
 
 {% block content %}
-<body class="d-flex flex-column min-vh-100">
+<div class="d-flex flex-column min-vh-100">
     <header class="mb-auto mt-4">
         <div class="container">
             <h1 class="display-4 fw-bold mb-3 faq-title">Frequently Asked Questions</h1>
         </div>
     </header>
 
-    <main class="flex-shrink-0">
+    <div class="flex-shrink-0">
         <div class="container mt-5">
             {% if faqs %}
                 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -52,5 +52,5 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 {% endblock %}
