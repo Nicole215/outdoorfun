@@ -7,3 +7,15 @@ Outdoorfun is a website designed to help outdoor enthusiasts easily discover and
 This platform was created to simplify your search by providing a centralized and clutter-free overview of relevant events. Whether you're looking for your next adventure or just curious about what's happening nearby, Outdoorfun makes it easy to browse, filter, and find events that match your interests.
 
 [Link to live website](https://outdoorfun-e7358f3cd44a.herokuapp.com/)
+
+# UX (User Experience)
+The design and functionality of this website focus on providing a clear and intuitive experience for users looking to explore events. The UX principles are tailored to ensure simplicity, accessibility, and user satisfaction:
+
+1. Target Audience
+- Outdoor enthusiasts interested in hiking and mud run events.
+- Individuals seeking a better overview of upcoming outdoor activities.
+- Users who value a simple and clutter-free platform for event discovery.
+2. User Goals
+- Easily find events based on location, date, or type.
+- Access detailed information about event organizers and their activities.
+- Navigate the site without distractions or unnecessary complexity.
