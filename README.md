@@ -34,3 +34,36 @@ The design aims to evoke the natural and outdoor elements associated with hiking
 For text, buttons and links I used the **Grey Friends** color palette suggested by [ColorSpace](https://mycolor.space/?hex=%23D8D4D1&sub=1)
 
 ![Screenshot 2025-01-24 203008](https://github.com/user-attachments/assets/2457f25e-b7f9-42c1-a321-728435e9014f)
+
+## Wireframes
+<details>
+
+<summary>Home</summary>
+
+![Home_view](https://github.com/user-attachments/assets/c3a86b01-ff64-4f46-822c-964d3c551815)
+
+</details>
+
+<details>
+
+<summary>Organiser Details</summary>
+
+![organiser_detail](https://github.com/user-attachments/assets/576f90bd-b1c8-4c0d-b2b7-8f8fbb69bddd)
+
+</details>
+
+<details>
+
+<summary>FAQs</summary>
+
+![faq_view](https://github.com/user-attachments/assets/7f76e9ae-830f-4747-8262-23912b1b2445)
+
+</details>
+
+<details>
+
+<summary>Forum</summary>
+
+![forum_view](https://github.com/user-attachments/assets/7019375a-201b-464b-b1c5-148b2e975ffd)
+
+</details>
