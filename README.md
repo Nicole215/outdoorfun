@@ -19,3 +19,18 @@ The design and functionality of this website focus on providing a clear and intu
 - Easily find events based on location, date, or type.
 - Access detailed information about event organizers and their activities.
 - Navigate the site without distractions or unnecessary complexity.
+
+# Design
+## Color Choice
+The design aims to evoke the natural and outdoor elements associated with hiking and mud runs:
+
+![Screenshot 2025-01-24 215739](https://github.com/user-attachments/assets/0dc90274-1e77-46db-a54d-446ae884abf0)
+
+- **Footer in green:** Represents grass at meeting points during events.
+- **Main content in grayish brown:** Symbolizes the dust and mud encountered in outdoor adventures.
+- **Header in blue:** Represents the sky, invoking a sense of openness and possibility.
+- **Brand text in white:** Reflects the white clouds seen on a sunny day.
+
+For text, buttons and links I used the **Grey Friends** color palette suggested by [ColorSpace](https://mycolor.space/?hex=%23D8D4D1&sub=1)
+
+![Screenshot 2025-01-24 203008](https://github.com/user-attachments/assets/2457f25e-b7f9-42c1-a321-728435e9014f)
