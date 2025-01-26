@@ -78,3 +78,50 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 
 ![Screenshot 2025-01-26 164348](https://github.com/user-attachments/assets/4eb7ed16-55d0-4b48-ae97-1c772938db69)
 ![Screenshot 2025-01-26 164446](https://github.com/user-attachments/assets/cc11811b-6a3b-43f7-87ec-a14517e72605)
+![Screenshot 2025-01-26 173645](https://github.com/user-attachments/assets/e47310d3-5add-4666-b1d6-9fed090306ee)
+
+#### Events List
+- Paginated list view of all upcoming events in Europe, sorted by date
+- Each card shows the organiser, date, town, country and event type
+- Organiser Name serves as link to a detailed view of the organiser
+
+![Screenshot 2025-01-26 173821](https://github.com/user-attachments/assets/c265c4f1-4f8e-4fbc-a6ff-ae851c428638)
+
+#### Search bar
+- Users can search the events list by city, country organiser and other criteria
+
+#### Organiser detailed view
+- Organiser header shows name and logo, if available
+- General Information about the organiser
+- List of all events by selected organiser
+
+![Screenshot 2025-01-26 174256](https://github.com/user-attachments/assets/1554aac4-1eae-4e5e-ac7a-0d41b7f7db21)
+
+#### FAQ
+- Answers frequently asked questions
+- Explains the purpose of the site for first-time users
+- Explains the benefits of registering an account for first-time users
+
+![Screenshot 2025-01-26 174605](https://github.com/user-attachments/assets/3ffc7656-9980-4253-bf44-2603a95b2d23)
+
+#### Contact Form
+- Gives users the option of contacting the site administrator
+
+![Screenshot 2025-01-26 174927](https://github.com/user-attachments/assets/8149ac11-7349-47c4-a721-d482c6a01adc)
+
+#### Register
+- Allows user to create an account
+- Fields include Username, Email (optional), Password and Password confirmation
+
+![Screenshot 2025-01-26 175152](https://github.com/user-attachments/assets/6c8a0046-557a-40cb-b75e-39a369427277)
+
+#### Login
+- Login form asking for username and password
+- Includes a "Remember Me" optin box
+
+![Screenshot 2025-01-26 175246](https://github.com/user-attachments/assets/50473852-de59-41ec-9077-2cb945ebad5c)
+
+#### Logout
+- The user is asked to confirm the logout on a separate page
+
+![Screenshot 2025-01-26 175413](https://github.com/user-attachments/assets/8dcb0f6b-c3ed-45a5-9581-79eeb8420a41)
