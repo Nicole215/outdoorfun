@@ -67,3 +67,14 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 ![forum_view](https://github.com/user-attachments/assets/7019375a-201b-464b-b1c5-148b2e975ffd)
 
 </details>
+
+# Features
+## Existing Features
+
+#### Navigation
+- Navbar with nav links and a motivational brand text
+- Different links visible for authenticated and unauthenticated users
+- Collapsible burger menu with drop-down on small to medium screens
+
+![Screenshot 2025-01-26 164348](https://github.com/user-attachments/assets/4eb7ed16-55d0-4b48-ae97-1c772938db69)
+![Screenshot 2025-01-26 164446](https://github.com/user-attachments/assets/cc11811b-6a3b-43f7-87ec-a14517e72605)
