@@ -1,3 +1,4 @@
+<a id="top"></a>
 # Outdoorfun: A home for various outdoor events
 
 ![Screenshot 2025-01-26 131247](https://github.com/user-attachments/assets/0f1456dd-3fa2-476a-93ec-7a6db253b71c)
@@ -8,6 +9,7 @@ This platform was created to simplify your search by providing a centralized and
 
 [Link to live website](https://outdoorfun-e7358f3cd44a.herokuapp.com/)
 
+[:arrow_up:](#top)
 # UX (User Experience)
 The design and functionality of this website focus on providing a clear and intuitive experience for users looking to explore events. The UX principles are tailored to ensure simplicity, accessibility, and user satisfaction:
 
