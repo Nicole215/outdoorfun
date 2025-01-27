@@ -289,3 +289,6 @@ All Python code written by myself was checked via CI Python Linter. Errors comin
 
 ![Screenshot 2025-01-27 170127](https://github.com/user-attachments/assets/0abf0892-f465-4278-b72c-54c85abc068b)
 
+[:arrow_up:](#top)
+### Responsiveness
+This page was created for larger screens. Thanks to the use of Bootstrap, the site is responsive. However, the organisers' logos had to be scaled down for small screens such as smartphones in order to retain the layout. This would have made the logo unrecognisable. On the other hand, the logo would have taken up too much space in its original size and distracted from the actual content. That's why I decided to do without the images in smartphone size and leave it at the Bootstrap settings with regard to the screen adjustments.
