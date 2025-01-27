@@ -1,131 +1,210 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<a id="top"></a>
+# Outdoorfun: A home for various outdoor events
 
-Welcome Nicole Burmann,
+![Screenshot 2025-01-26 131247](https://github.com/user-attachments/assets/0f1456dd-3fa2-476a-93ec-7a6db253b71c)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Outdoorfun is a website designed to help outdoor enthusiasts easily discover and explore events in the areas of hiking and mud runs. In today's world, finding an event can quickly become overwhelming—first, you struggle to locate a suitable event, then algorithms flood your social media feed with endless suggestions, making it hard to keep track.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+This platform was created to simplify your search by providing a centralized and clutter-free overview of relevant events. Whether you're looking for your next adventure or just curious about what's happening nearby, Outdoorfun makes it easy to browse, filter, and find events that match your interests.
 
-## Gitpod Reminders
+[Link to live website](https://outdoorfun-e7358f3cd44a.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[:arrow_up:](#top)
+# UX (User Experience)
+The design and functionality of this website focus on providing a clear and intuitive experience for users looking to explore events. The UX principles are tailored to ensure simplicity, accessibility, and user satisfaction:
 
-`python3 -m http.server`
+1. Target Audience
+- Outdoor enthusiasts interested in hiking and mud run events.
+- Individuals seeking a better overview of upcoming outdoor activities.
+- Users who value a simple and clutter-free platform for event discovery.
+2. User Goals
+- Easily find events based on location, date, or type.
+- Access detailed information about event organizers and their activities.
+- Navigate the site without distractions or unnecessary complexity.
 
-A blue button should appear to click: _Make Public_,
+[:arrow_up:](#top)
+# Design
+## Color Choice
+The design aims to evoke the natural and outdoor elements associated with hiking and mud runs:
 
-Another blue button should appear to click: _Open Browser_.
+![Screenshot 2025-01-24 215739](https://github.com/user-attachments/assets/0dc90274-1e77-46db-a54d-446ae884abf0)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- **Footer in green:** Represents grass at meeting points during events.
+- **Main content in grayish brown:** Symbolizes the dust and mud encountered in outdoor adventures.
+- **Header in blue:** Represents the sky, invoking a sense of openness and possibility.
+- **Brand text in white:** Reflects the white clouds seen on a sunny day.
 
-A blue button should appear to click: _Make Public_,
+For text, buttons and links I used the **Grey Friends** color palette suggested by [ColorSpace](https://mycolor.space/?hex=%23D8D4D1&sub=1)
 
-Another blue button should appear to click: _Open Browser_.
+![Screenshot 2025-01-24 203008](https://github.com/user-attachments/assets/2457f25e-b7f9-42c1-a321-728435e9014f)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+[:arrow_up:](#top)
+## Wireframes
+<details>
 
-To log into the Heroku toolbelt CLI:
+<summary>Home</summary>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Home_view](https://github.com/user-attachments/assets/c3a86b01-ff64-4f46-822c-964d3c551815)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+</details>
 
-### Connecting your Mongo database
+<details>
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+<summary>Organiser Details</summary>
 
-------
+![organiser_detail](https://github.com/user-attachments/assets/576f90bd-b1c8-4c0d-b2b7-8f8fbb69bddd)
 
-## Release History
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<details>
 
-**June 18, 2024,** Add Mongo back into template
+<summary>FAQs</summary>
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+![faq_view](https://github.com/user-attachments/assets/7f76e9ae-830f-4747-8262-23912b1b2445)
 
-**May 28 2024:** Fix Mongo and Links installs
+</details>
 
-**April 26 2024:** Update node version to 16
+<details>
 
-**September 20 2023:** Update Python version to 3.9.17.
+<summary>Forum</summary>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![forum_view](https://github.com/user-attachments/assets/7019375a-201b-464b-b1c5-148b2e975ffd)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+</details>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+[:arrow_up:](#top)
+# Features
+## Existing Features
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Navigation
+- Navbar with nav links and a motivational brand text
+- Different links visible for authenticated and unauthenticated users
+- Collapsible burger menu with drop-down on small to medium screens
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Screenshot 2025-01-26 164348](https://github.com/user-attachments/assets/4eb7ed16-55d0-4b48-ae97-1c772938db69)
+![Screenshot 2025-01-26 164446](https://github.com/user-attachments/assets/cc11811b-6a3b-43f7-87ec-a14517e72605)
+![Screenshot 2025-01-26 173645](https://github.com/user-attachments/assets/e47310d3-5add-4666-b1d6-9fed090306ee)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Events List
+- Paginated list view of all upcoming events in Europe, sorted by date
+- Each card shows the organiser, date, town, country and event type
+- Organiser Name serves as link to a detailed view of the organiser
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Screenshot 2025-01-26 173821](https://github.com/user-attachments/assets/c265c4f1-4f8e-4fbc-a6ff-ae851c428638)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### Search bar
+- Users can search the events list by city, country organiser and other criteria
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+[:arrow_up:](#top)
+#### Organiser detailed view
+- Organiser header shows name and logo, if available
+- General Information about the organiser
+- List of all events by selected organiser
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Screenshot 2025-01-26 174256](https://github.com/user-attachments/assets/1554aac4-1eae-4e5e-ac7a-0d41b7f7db21)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+[:arrow_up:](#top)
+#### FAQ
+- Answers frequently asked questions
+- Explains the purpose of the site for first-time users
+- Explains the benefits of registering an account for first-time users
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Screenshot 2025-01-26 174605](https://github.com/user-attachments/assets/3ffc7656-9980-4253-bf44-2603a95b2d23)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+[:arrow_up:](#top)
+#### Contact Form
+- Gives users the option of contacting the site administrator
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Screenshot 2025-01-26 174927](https://github.com/user-attachments/assets/8149ac11-7349-47c4-a721-d482c6a01adc)
 
-------
+[:arrow_up:](#top)
+#### Register
+- Allows user to create an account
+- Fields include Username, Email (optional), Password and Password confirmation
 
-## FAQ about the uptime script
+![Screenshot 2025-01-26 175152](https://github.com/user-attachments/assets/6c8a0046-557a-40cb-b75e-39a369427277)
 
-**Why have you added this script?**
+[:arrow_up:](#top)
+#### Login
+- Login form asking for username and password
+- Includes a "Remember Me" optin box
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Screenshot 2025-01-26 175246](https://github.com/user-attachments/assets/50473852-de59-41ec-9077-2cb945ebad5c)
 
-**How will this affect me?**
+[:arrow_up:](#top)
+#### Logout
+- The user is asked to confirm the logout on a separate page
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Screenshot 2025-01-26 175413](https://github.com/user-attachments/assets/8dcb0f6b-c3ed-45a5-9581-79eeb8420a41)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+[:arrow_up:](#top)
+### Forum
+A forum has been added to the website, allowing users to perform full CRUD (Create, Read, Update, Delete) operations. Users can create posts, comment on them, edit their own content, and delete posts or comments, showcasing the implementation of full CRUD functionality.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Post List
+- A list of all previous forum entries with the name of the author and date of creation
+- A button to create a new post is shown at the very top
 
-**So….?**
+![Screenshot 2025-01-26 180753](https://github.com/user-attachments/assets/ea27066e-03a3-4625-b65b-fda168da3b3b)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+[:arrow_up:](#top)
+#### Detailed Post View
+- Shows the post and further editing options
+- If user is author of the post, options to edit or delete the post are shown
+- If logged in user is not author of the post, only option shown is 'Back to List'
+- User can add a comment
 
-**Can I opt out?**
+![Screenshot 2025-01-26 181116](https://github.com/user-attachments/assets/513fd036-4da8-4ded-b9c6-1ffcb3391f9c)
+![Screenshot 2025-01-26 181302](https://github.com/user-attachments/assets/c2ed9058-6f5d-4a68-8bc8-3765915aa57b)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+[:arrow_up:](#top)
+#### Create Post
+- Form to create a post
+- Both title and content have to be filled out
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Screenshot 2025-01-26 181415](https://github.com/user-attachments/assets/c2a509aa-8274-47f6-a1c8-15bfeebff4d0)
 
-**Anything more?**
+[:arrow_up:](#top)
+#### Edit Post
+- Fields are prefilled with original entry
+- User can confirm edit or cancel
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+[:arrow_up:](#top)
+#### Delete Post
+- User has to confirm deletion twice
+- When deleting a post, all comments related to the post will be deleted, too
 
----
+![Screenshot 2025-01-26 181816](https://github.com/user-attachments/assets/9db59d35-5b08-48de-8e35-76c49ad48c67)
+![Screenshot 2025-01-26 181859](https://github.com/user-attachments/assets/c3a73dee-79b4-4308-aa39-92b7179e723c)
 
-Happy coding!
+#### Add comment
+- Logged in users can comment on Posts
+
+![Screenshot 2025-01-27 100451](https://github.com/user-attachments/assets/cd3c6531-1174-4ffd-a385-5be6a5e0171c)
+![Screenshot 2025-01-27 100507](https://github.com/user-attachments/assets/6d71ee2a-4023-4d91-bf19-357f255735f7)
+
+[:arrow_up:](#top)
+#### Edit and delete comment
+- Only the user who wrote the comment, can edit or delete it
+- Unlike posts, comments do not have to be confirmed twice when they are deleted, but once
+
+![Screenshot 2025-01-27 100749](https://github.com/user-attachments/assets/61f552b9-d6b1-4baf-a317-cd16f06941ca)
+![Screenshot 2025-01-27 101007](https://github.com/user-attachments/assets/ef599f59-bc08-4674-b0b9-abfb8abb1d7e)
+
+[:arrow_up:](#top)
+### Footer
+- The footer includes icons for popular social media platforms.
+- Links open in a separate tab
+
+![Screenshot 2025-01-27 101450](https://github.com/user-attachments/assets/7df83b01-281c-48b1-a47b-231068cb57e7)
+
+[:arrow_up:](#top)
+## Possible Future Features
+1. Links to all organisers
+   - As this project is for educational purposes, I have refrained from including too many links to external websites. However, for the best user experience, it is appropriate to link to each organiser.
+2. Event Details
+   - The enthusiastic athlete can choose their distance at almost every event. For mud runs, the number of obstacles changes in addition to the distance. However, due to time constraints, I have decided to postpone these details until later.
+3. Data input via the front end
+   - With Django, it is possible to provide an input form via the front end, which can be used by trusted users or the organisers themselves to add events to the list, for example. This can be regulated via permissions.
+4. Automatic deletion of past events
+   - To keep the overview clean, you could set that events are automatically deleted if they are in the past.
