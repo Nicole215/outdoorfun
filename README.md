@@ -393,3 +393,19 @@ Next, the default image was no longer shown. I found a quick fix for this in Sla
 #### Known error
 Throughout the code I use Organisator instead of organiser. It wasn't until I spoke to my facilitator Kay at a weekly stand-up session that I realised I had used the German word. As the site is aimed at a predominantly German audience and I was planning to translate the site into German after the course anyway, I decided to leave this mistake. In conversation with Kay, I also realised that native English speakers are still able to understand the basic idea.
 
+[:arrow_up:](#top)
+# Technologies Used
+## Work Environments and Hosting
+- [Balsamiq](https://balsamiq.com/) Wireframes
+- [GitHub](https://github.com/) Version control
+- [GitPod](https://gitpod.io/) IDE
+- [Heroku](https://heroku.com/) Site hosting
+- [Cloudinary](https://cloudinary.com/) Hosting static and media files
+- [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Used for front-end developement
+## Python and Django Libraries
+- [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/) Python HTTP server for WSGI applications
+- [psycopg2](https://pypi.org/project/psycopg2/) PostgreSQL Database adapter
+- [Pillow](https://pypi.org/project/Pillow/) Python Imaging Library
+- [django-storages](https://django-storages.readthedocs.io/en/latest/) collection of custom storage backends for Django
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/) User authentication
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) Control rendering behaviour of Django forms
