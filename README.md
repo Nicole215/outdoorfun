@@ -204,6 +204,15 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 
 ![Screenshot 2025-01-27 101450](https://github.com/user-attachments/assets/7df83b01-281c-48b1-a47b-231068cb57e7)
 
+### Custom 404 Page
+<details>
+
+<summary>404 Page</summary>
+
+![Screenshot 2025-01-27 173757](https://github.com/user-attachments/assets/b89e6fc7-d2f5-42bf-bbfe-f9b4badf2d06)
+
+</details>
+
 [:arrow_up:](#top)
 ## Possible Future Features
 1. Links to all organisers
