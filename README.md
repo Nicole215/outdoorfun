@@ -307,13 +307,39 @@ All navigation links can be found in navbar or on small to medium screens in the
 | Logout | While authenticated, click Logout | User is directed to Lougout form |
 | Forum | While authenticated, click Forum | User is directed to Forum Post List |
 
+[:arrow_up:](#top)
 ### CRUD
 The full CRUD functionality is only available for authenticated users in the forum.
 #### Create
-Write and submit a post to the forum (authenticated users only)
+Write and submit a post to the forum or comment on a post (authenticated users only)
 | Feature | Action | Expected Result |
 | --- | --- | --- |
-| Title field | Fill out title field | The written text is displayed |
+| Title field | Fill out title field (only available for posts) | The written text is displayed |
 | Content field | Fill out content field | The written text is displayed |
 | Submit | After completing your post, click submit | The user is taken to the post they have just written |
 | Incomplete form | Leave one field empty and click submit | User remains on "Create" page and is prompted to complete missing fields |
+[:arrow_up:](#top)
+#### Read
+Read submitted posts and comments.
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Post list | Scroll through all posts | User can see all posts |
+| Post detail | Click on any post | User is directed to post detail view, where user could add a comment |
+#### Update
+Option to edit an entry or a comment. Only available for the respective author. (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| User match | On post list, click a post submitted by a different user | Detail view does not show delete button, if user is not author |
+| Edit-Btn | From post detail view, click edit button | Renders edit form with title (if post) and content field pre-populated by original post/comment |
+| Update | Update text, then below text field, click Update | User is taken back to post detail view, showing updated post/comment |
+| Cancel | Below form, click Cancel for post / Back to Post for comment | User is taken back to post detail view |
+[:arrow_up:](#top)
+#### Delete
+Option to delete posts or comments. Only available for the respective author. (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| User match | On post list, click a post submitted by a different user | Detail view does not show delete button, if user is not author |
+| Delete-Btn | From post detail view, click Delete. Button is only visible after Login. | User is directed to delete page which prompts user to conform delete action. For posts, an additional pop-up prompts confirmation |
+| Confirm Delete Post | On delete page, click Delete Post | User is taken back to post list |
+| Confirm Delete Comment | On delete page, click Delete Comment | User is taken back to post |
+| Cancel | On delete page, click Cancel | User is taken back to post |
