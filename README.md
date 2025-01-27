@@ -377,3 +377,19 @@ Links to social media sites located in footer (available to all users)
 | Feature | Action | Expected Result |
 | --- | --- | --- |
 | Link Icons in Footer | Click on any of the social media icons | New tab opens with respective social media site |
+
+# Fixed Bugs
+The code worked well until implementing Cloudinary for media storage.
+The first error message encountered was: "Organiser name cannot be null."
+Since all organisers listed had names, I suspected the issue might be related to the images. To troubleshoot, I added a custom display_image method to the Django admin panel. This method checks for the presence of an image, and by ensuring the image field was correctly handled, the error was resolved.
+
+![Screenshot 2025-01-27 213426](https://github.com/user-attachments/assets/20d8b928-a9a8-40b2-95a7-7dcabdcaf76a)
+
+Next, the default image was no longer shown. I found a quick fix for this in Slack.
+
+![Screenshot 2025-01-27 213539](https://github.com/user-attachments/assets/980284ee-1edc-4adc-935c-dee1e6cf63b9)
+
+[:arrow_up:](#top)
+#### Known error
+Throughout the code I use Organisator instead of organiser. It wasn't until I spoke to my facilitator Kay at a weekly stand-up session that I realised I had used the German word. As the site is aimed at a predominantly German audience and I was planning to translate the site into German after the course anyway, I decided to leave this mistake. In conversation with Kay, I also realised that native English speakers are still able to understand the basic idea.
+
