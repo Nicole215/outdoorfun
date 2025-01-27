@@ -172,7 +172,22 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 [:arrow_up:](#top)
 #### Delete Post
 - User has to confirm deletion twice
+- When deleting a post, all comments related to the post will be deleted, too
 
 ![Screenshot 2025-01-26 181816](https://github.com/user-attachments/assets/9db59d35-5b08-48de-8e35-76c49ad48c67)
 ![Screenshot 2025-01-26 181859](https://github.com/user-attachments/assets/c3a73dee-79b4-4308-aa39-92b7179e723c)
+
+#### Add comment
+- Logged in users can comment on Posts
+
+![Screenshot 2025-01-27 100451](https://github.com/user-attachments/assets/cd3c6531-1174-4ffd-a385-5be6a5e0171c)
+![Screenshot 2025-01-27 100507](https://github.com/user-attachments/assets/6d71ee2a-4023-4d91-bf19-357f255735f7)
+
+[:arrow_up:](#top)
+#### Edit and delete comment
+- Only the user who wrote the comment, can edit or delete it
+- Unlike posts, comments do not have to be confirmed twice when they are deleted, but once
+
+![Screenshot 2025-01-27 100749](https://github.com/user-attachments/assets/61f552b9-d6b1-4baf-a317-cd16f06941ca)
+![Screenshot 2025-01-27 101007](https://github.com/user-attachments/assets/ef599f59-bc08-4674-b0b9-abfb8abb1d7e)
 
