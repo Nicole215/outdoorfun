@@ -81,9 +81,14 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 - Different links visible for authenticated and unauthenticated users
 - Collapsible burger menu with drop-down on small to medium screens
 
-![Screenshot 2025-01-26 164348](https://github.com/user-attachments/assets/4eb7ed16-55d0-4b48-ae97-1c772938db69)
+![Screenshot 2025-01-27 182754](https://github.com/user-attachments/assets/fa79a086-4d41-4600-a7e7-14fd9af4a423)
 ![Screenshot 2025-01-26 164446](https://github.com/user-attachments/assets/cc11811b-6a3b-43f7-87ec-a14517e72605)
 ![Screenshot 2025-01-26 173645](https://github.com/user-attachments/assets/e47310d3-5add-4666-b1d6-9fed090306ee)
+
+[:arrow_up:](#top)
+#### Logged in status
+- If a user is logged in, this is displayed in the header together with the user name
+- I have avoided pop-up messages as most users I have spoken to find them annoying or even distracting
 
 #### Events List
 - Paginated list view of all upcoming events in Europe, sorted by date
@@ -168,6 +173,7 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 #### Edit Post
 - Fields are prefilled with original entry
 - User can confirm edit or cancel
+- After confirming the change, the user is taken back to their updated entry
 
 [:arrow_up:](#top)
 #### Delete Post
