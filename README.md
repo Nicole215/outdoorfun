@@ -453,3 +453,14 @@ The following options are available to work with this code or run in a local env
 - Open your terminal and navigate to the folder where you want the repository.
 - Run the command git clone <repository-url>.
 - The repository is now downloaded to your local machine and ready to be worked on.  
+
+[:arrow_up:](#top)
+## Credits
+1. Content
+   - The skeleton of this project is based on the I Think Therefore I Blog walkthrough, provided by [Code Institute](https://codeinstitute.net/de/)
+   - The code for FAQ and Contact Form was taken from my PP5 Outdoor Queens
+   - For the forum I also used the tutorial provided by [Reintech](https://reintech.io/blog/django-forum-tutorial-build-a-forum-in-django-step-by-step-guide-for-software-developers)
+2. Media
+   - All icons were sourced from FontAwesome and are used under their license.
+   - All logos come directly from the respective organisers.
+   - The default image was taken from [unsplash](https://unsplash.com/de)
