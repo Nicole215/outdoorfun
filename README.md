@@ -409,3 +409,47 @@ Throughout the code I use Organisator instead of organiser. It wasn't until I sp
 - [django-storages](https://django-storages.readthedocs.io/en/latest/) collection of custom storage backends for Django
 - [django-allauth](https://django-allauth.readthedocs.io/en/latest/) User authentication
 - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) Control rendering behaviour of Django forms
+
+[:arrow_up:](#top)
+## Deployment
+#### Heroku Deployment
+This site was deployed to and is currently hosted on the Heroku platform. The steps for deploying to Heroku, using PostgreSQL as the database host, are as follows:
+1. Prepare Requirements
+   - Generate a requirements.txt file by saving all project dependencies.
+2. Set Up a Heroku App
+   - Log in (or sign up) to Heroku.
+   - Click New, then select Create new app.
+   - Provide a unique app name and select the Europe region.
+3. Add Configuration Variables
+   - Go to the Settings tab, navigate to Config Vars, and reveal the section.
+   - Add all variables from your environment file (env.py) to Heroku’s Config Vars.
+4. Connect GitHub Repository
+   - Under the Deploy tab, choose GitHub as the deployment method.
+   - Search for your GitHub repository and click Connect.
+5. Update Django Settings
+   - Add the Heroku app’s URL to the ALLOWED_HOSTS list.
+   - Ensure DEBUG is set to False for production.
+6. Collect Static Files
+   - Gather all static files for the project to prepare them for deployment.
+7. Create a Procfile
+   - In the root directory, create a Procfile to instruct Heroku to run the app.
+8. Deploy the Code
+   - Enable automatic deploys or manually deploy the main branch through Heroku’s dashboard.
+
+[:arrow_up:](#top)
+## Development
+The following options are available to work with this code or run in a local environment.
+
+### Fork
+- Log into GitHub and navigate to the repository you want to fork.
+- Click the Fork button in the top-right corner.
+- Choose a different owner if needed.
+- Click Create Fork to confirm.
+- The repository is now copied to your account, ready to be cloned or modified.
+
+### Clone
+- Log into GitHub and navigate to the repository you want to clone.
+- Click the Code button and copy the URL (HTTPS, SSH, or GitHub CLI).
+- Open your terminal and navigate to the folder where you want the repository.
+- Run the command git clone <repository-url>.
+- The repository is now downloaded to your local machine and ready to be worked on.  
