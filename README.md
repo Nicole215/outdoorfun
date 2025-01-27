@@ -318,6 +318,7 @@ Write and submit a post to the forum or comment on a post (authenticated users o
 | Content field | Fill out content field | The written text is displayed |
 | Submit | After completing your post, click submit | The user is taken to the post they have just written |
 | Incomplete form | Leave one field empty and click submit | User remains on "Create" page and is prompted to complete missing fields |
+
 [:arrow_up:](#top)
 #### Read
 Read submitted posts and comments.
@@ -333,6 +334,7 @@ Option to edit an entry or a comment. Only available for the respective author. 
 | Edit-Btn | From post detail view, click edit button | Renders edit form with title (if post) and content field pre-populated by original post/comment |
 | Update | Update text, then below text field, click Update | User is taken back to post detail view, showing updated post/comment |
 | Cancel | Below form, click Cancel for post / Back to Post for comment | User is taken back to post detail view |
+
 [:arrow_up:](#top)
 #### Delete
 Option to delete posts or comments. Only available for the respective author. (authenticated users only)
@@ -343,3 +345,35 @@ Option to delete posts or comments. Only available for the respective author. (a
 | Confirm Delete Post | On delete page, click Delete Post | User is taken back to post list |
 | Confirm Delete Comment | On delete page, click Delete Comment | User is taken back to post |
 | Cancel | On delete page, click Cancel | User is taken back to post |
+
+[:arrow_up:](#top)
+### Register
+Account creation for unauthenticated users
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Sign Up form | Go to Register via nav link | Renders form input fields Username, Email (optional), Password, Password (confirm) |
+| Submit | Fill in form fields, click Sign Up | Form closes itself, user is redirected to homepage and shown as logged in |
+| Incomplete form | Leave one or more fields empty, click Sign Up. | User is prompted to fill out missing fields |
+
+### Login
+Signing into existing account (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Login form | Go to login form via link in navbar | Renders form input fields Username, Password, Remember me (checkbox) |
+| Submit | Fill in form fields accordingly, click Sign In | User is redirected to homepage, shown as logged in in header |
+| Incomplete form | Leave any field empty and click Sign In | User remains on Sign In form and is prompted to fill out missing fields |
+
+[:arrow_up:](#top)
+### Logout
+Allows user to sign out of account (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Logout form | When authenticated, click on Logout in nav bar | User is directed to logout page, asking user to confirm logout |
+| Sign Out | On Sign Out page, click Sign Out | User is redirected to homepage, navbar changes to unauthenticated user view |
+
+[:arrow_up:](#top)
+### Social Links
+Links to social media sites located in footer (available to all users)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Link Icons in Footer | Click on any of the social media icons | New tab opens with respective social media site |
