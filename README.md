@@ -208,3 +208,78 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
    - With Django, it is possible to provide an input form via the front end, which can be used by trusted users or the organisers themselves to add events to the list, for example. This can be regulated via permissions.
 4. Automatic deletion of past events
    - To keep the overview clean, you could set that events are automatically deleted if they are in the past.
+
+[:arrow_up:](#top)
+# Testing
+## Validator Testing
+### HTML [W3C validator](https://validator.w3.org/)
+#### Home
+
+![Screenshot 2025-01-26 111337](https://github.com/user-attachments/assets/c0cb64c7-5946-4d52-9906-04d251127552)
+
+#### Organiser Detail View
+
+![Screenshot 2025-01-26 111401](https://github.com/user-attachments/assets/c3529016-ad6f-4d19-bfd1-5cfb1d1aee2a)
+
+#### FAQ
+
+![Screenshot 2025-01-26 115738](https://github.com/user-attachments/assets/0583d3e2-7f95-43e0-bbc9-677d0ddfb89a)
+
+#### Login
+
+![Screenshot 2025-01-26 113004](https://github.com/user-attachments/assets/5c640c35-d63f-48fd-8c4c-bcb3ef204583)
+
+#### Logout
+
+![Screenshot 2025-01-26 112609](https://github.com/user-attachments/assets/e693418e-4b33-45aa-904e-7a93f863418f)
+
+#### Forum
+
+![Screenshot 2025-01-26 112118](https://github.com/user-attachments/assets/eace1974-0e66-4cb4-abdd-e0718ac6e4cc)
+
+#### Forum Add Post
+
+![Screenshot 2025-01-26 112140](https://github.com/user-attachments/assets/a9419100-6be5-4ec0-a57a-24083ce7667c)
+
+#### Forum Post Detail
+
+![Screenshot 2025-01-26 112238](https://github.com/user-attachments/assets/71a89491-6c6b-427c-ba65-2d1ad98a604e)
+
+#### Forum Edit Post
+
+![Screenshot 2025-01-26 130450](https://github.com/user-attachments/assets/dc9d3484-8743-43a7-8985-64dd156b54cf)
+
+#### Forum Delete Post
+
+![Screenshot 2025-01-26 130529](https://github.com/user-attachments/assets/18d472ca-62c3-4ec2-ad54-5873ae32ba4c)
+
+#### Forum Add Comment
+
+![Screenshot 2025-01-26 112349](https://github.com/user-attachments/assets/2bfd11a9-6154-410b-a0b0-942e97ced509)
+
+#### Forum Edit Comment
+
+![Screenshot 2025-01-26 130228](https://github.com/user-attachments/assets/89d3a3f2-2fc8-47c7-a99e-d0c7118141ed)
+
+#### Forum Delete Comment
+
+![Screenshot 2025-01-26 130309](https://github.com/user-attachments/assets/ae74721e-418a-480b-87e8-8e48db1fa603)
+
+[:arrow_up:](#top)
+### CSS [Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+![Screenshot 2025-01-24 215819](https://github.com/user-attachments/assets/ce9949bc-1d54-4437-b182-c9d8de9750a0)
+
+### Python [CI Python Linter](https://pep8ci.herokuapp.com/)
+All Python code written by myself was checked via CI Python Linter. Errors coming up were line too long, trailing whitespace or missing newline at the end of file. All of such errors were corrected right away.
+
+[:arrow_up:](#top)
+### Performance, Accessibility, SEO, Best Practices (Lighthouse Chrome DevTools)
+#### Desktop results
+
+![Screenshot 2025-01-27 170046](https://github.com/user-attachments/assets/41933f42-999d-484c-b301-77860282fad3)
+
+#### Mobile results
+
+![Screenshot 2025-01-27 170127](https://github.com/user-attachments/assets/0abf0892-f465-4278-b72c-54c85abc068b)
+
