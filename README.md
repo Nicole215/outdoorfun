@@ -191,3 +191,9 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 ![Screenshot 2025-01-27 100749](https://github.com/user-attachments/assets/61f552b9-d6b1-4baf-a317-cd16f06941ca)
 ![Screenshot 2025-01-27 101007](https://github.com/user-attachments/assets/ef599f59-bc08-4674-b0b9-abfb8abb1d7e)
 
+[:arrow_up:](#top)
+### Footer
+- The footer includes icons for popular social media platforms.
+- Links open in a separate tab
+
+![Screenshot 2025-01-27 101450](https://github.com/user-attachments/assets/7df83b01-281c-48b1-a47b-231068cb57e7)
