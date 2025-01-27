@@ -197,3 +197,14 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 - Links open in a separate tab
 
 ![Screenshot 2025-01-27 101450](https://github.com/user-attachments/assets/7df83b01-281c-48b1-a47b-231068cb57e7)
+
+[:arrow_up:](#top)
+## Possible Future Features
+1. Links to all organisers
+   - As this project is for educational purposes, I have refrained from including too many links to external websites. However, for the best user experience, it is appropriate to link to each organiser.
+2. Event Details
+   - The enthusiastic athlete can choose their distance at almost every event. For mud runs, the number of obstacles changes in addition to the distance. However, due to time constraints, I have decided to postpone these details until later.
+3. Data input via the front end
+   - With Django, it is possible to provide an input form via the front end, which can be used by trusted users or the organisers themselves to add events to the list, for example. This can be regulated via permissions.
+4. Automatic deletion of past events
+   - To keep the overview clean, you could set that events are automatically deleted if they are in the past.
