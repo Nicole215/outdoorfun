@@ -292,3 +292,28 @@ All Python code written by myself was checked via CI Python Linter. Errors comin
 [:arrow_up:](#top)
 ### Responsiveness
 This page was created for larger screens. Thanks to the use of Bootstrap, the site is responsive. However, the organisers' logos had to be scaled down for small screens such as smartphones in order to retain the layout. This would have made the logo unrecognisable. On the other hand, the logo would have taken up too much space in its original size and distracted from the actual content. That's why I decided to do without the images in smartphone size and leave it at the Bootstrap settings with regard to the screen adjustments.
+
+## Manual Testing
+### Navigation
+All navigation links can be found in navbar or on small to medium screens in the burger drop-down menu.
+
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Brand text | While not on homepage, click Brand text | User is redirected to homepage |
+| Browse all | While not on homepage, click Browse all | User is redirected to homepage |
+| FAQ | Click FAQ | User is directed to FAQ |
+| Register | While not authenticated, click Register | User is directed to Sign up form |
+| Login | While not authenticated, cick Login | User is directed to Login form |
+| Logout | While authenticated, click Logout | User is directed to Lougout form |
+| Forum | While authenticated, click Forum | User is directed to Forum Post List |
+
+### CRUD
+The full CRUD functionality is only available for authenticated users in the forum.
+#### Create
+Write and submit a post to the forum (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Title field | Fill out title field | The written text is displayed |
+| Content field | Fill out content field | The written text is displayed |
+| Submit | After completing your post, click submit | The user is taken to the post they have just written |
+| Incomplete form | Leave one field empty and click submit | User remains on "Create" page and is prompted to complete missing fields |
