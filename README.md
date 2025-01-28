@@ -81,13 +81,13 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 - Different links visible for authenticated and unauthenticated users
 - Collapsible burger menu with drop-down on small to medium screens
 
-![Screenshot 2025-01-27 182754](https://github.com/user-attachments/assets/fa79a086-4d41-4600-a7e7-14fd9af4a423)
+![Screenshot 2025-01-28 080334](https://github.com/user-attachments/assets/fe3b79d6-40dc-4d22-a14a-1e5fba59127b)
 ![Screenshot 2025-01-26 164446](https://github.com/user-attachments/assets/cc11811b-6a3b-43f7-87ec-a14517e72605)
 ![Screenshot 2025-01-26 173645](https://github.com/user-attachments/assets/e47310d3-5add-4666-b1d6-9fed090306ee)
 
 [:arrow_up:](#top)
 #### Logged in status
-- If a user is logged in, this is displayed in the header together with the user name
+- If a user is logged in, this is displayed in the body together with the user name
 - I have avoided pop-up messages as most users I have spoken to find them annoying or even distracting
 
 #### Events List
@@ -119,8 +119,11 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 [:arrow_up:](#top)
 #### Contact Form
 - Gives users the option of contacting the site administrator
+- A message let's the user know when the submission was successful
 
 ![Screenshot 2025-01-26 174927](https://github.com/user-attachments/assets/8149ac11-7349-47c4-a721-d482c6a01adc)
+![Screenshot 2025-01-28 080244](https://github.com/user-attachments/assets/c44f87ac-98e7-49ae-9bbc-70c9ecce8c0f)
+
 
 [:arrow_up:](#top)
 #### Register
