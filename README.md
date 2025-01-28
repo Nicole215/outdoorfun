@@ -81,9 +81,14 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 - Different links visible for authenticated and unauthenticated users
 - Collapsible burger menu with drop-down on small to medium screens
 
-![Screenshot 2025-01-26 164348](https://github.com/user-attachments/assets/4eb7ed16-55d0-4b48-ae97-1c772938db69)
+![Screenshot 2025-01-27 182754](https://github.com/user-attachments/assets/fa79a086-4d41-4600-a7e7-14fd9af4a423)
 ![Screenshot 2025-01-26 164446](https://github.com/user-attachments/assets/cc11811b-6a3b-43f7-87ec-a14517e72605)
 ![Screenshot 2025-01-26 173645](https://github.com/user-attachments/assets/e47310d3-5add-4666-b1d6-9fed090306ee)
+
+[:arrow_up:](#top)
+#### Logged in status
+- If a user is logged in, this is displayed in the header together with the user name
+- I have avoided pop-up messages as most users I have spoken to find them annoying or even distracting
 
 #### Events List
 - Paginated list view of all upcoming events in Europe, sorted by date
@@ -168,6 +173,7 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 #### Edit Post
 - Fields are prefilled with original entry
 - User can confirm edit or cancel
+- After confirming the change, the user is taken back to their updated entry
 
 [:arrow_up:](#top)
 #### Delete Post
@@ -197,6 +203,15 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
 - Links open in a separate tab
 
 ![Screenshot 2025-01-27 101450](https://github.com/user-attachments/assets/7df83b01-281c-48b1-a47b-231068cb57e7)
+
+### Custom 404 Page
+<details>
+
+<summary>404 Page</summary>
+
+![Screenshot 2025-01-27 173757](https://github.com/user-attachments/assets/b89e6fc7-d2f5-42bf-bbfe-f9b4badf2d06)
+
+</details>
 
 [:arrow_up:](#top)
 ## Possible Future Features
@@ -283,3 +298,178 @@ All Python code written by myself was checked via CI Python Linter. Errors comin
 
 ![Screenshot 2025-01-27 170127](https://github.com/user-attachments/assets/0abf0892-f465-4278-b72c-54c85abc068b)
 
+[:arrow_up:](#top)
+### Responsiveness
+This page was created for larger screens. Thanks to the use of Bootstrap, the site is responsive. However, the organisers' logos had to be scaled down for small screens such as smartphones in order to retain the layout. This would have made the logo unrecognisable. On the other hand, the logo would have taken up too much space in its original size and distracted from the actual content. That's why I decided to do without the images in smartphone size and leave it at the Bootstrap settings with regard to the screen adjustments.
+
+## Manual Testing
+### Navigation
+All navigation links can be found in navbar or on small to medium screens in the burger drop-down menu.
+
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Brand text | While not on homepage, click Brand text | User is redirected to homepage |
+| Browse all | While not on homepage, click Browse all | User is redirected to homepage |
+| FAQ | Click FAQ | User is directed to FAQ |
+| Register | While not authenticated, click Register | User is directed to Sign up form |
+| Login | While not authenticated, cick Login | User is directed to Login form |
+| Logout | While authenticated, click Logout | User is directed to Lougout form |
+| Forum | While authenticated, click Forum | User is directed to Forum Post List |
+
+[:arrow_up:](#top)
+### CRUD
+The full CRUD functionality is only available for authenticated users in the forum.
+#### Create
+Write and submit a post to the forum or comment on a post (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Title field | Fill out title field (only available for posts) | The written text is displayed |
+| Content field | Fill out content field | The written text is displayed |
+| Submit | After completing your post, click submit | The user is taken to the post they have just written |
+| Incomplete form | Leave one field empty and click submit | User remains on "Create" page and is prompted to complete missing fields |
+
+[:arrow_up:](#top)
+#### Read
+Read submitted posts and comments.
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Post list | Scroll through all posts | User can see all posts |
+| Post detail | Click on any post | User is directed to post detail view, where user could add a comment |
+#### Update
+Option to edit an entry or a comment. Only available for the respective author. (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| User match | On post list, click a post submitted by a different user | Detail view does not show delete button, if user is not author |
+| Edit-Btn | From post detail view, click edit button | Renders edit form with title (if post) and content field pre-populated by original post/comment |
+| Update | Update text, then below text field, click Update | User is taken back to post detail view, showing updated post/comment |
+| Cancel | Below form, click Cancel for post / Back to Post for comment | User is taken back to post detail view |
+
+[:arrow_up:](#top)
+#### Delete
+Option to delete posts or comments. Only available for the respective author. (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| User match | On post list, click a post submitted by a different user | Detail view does not show delete button, if user is not author |
+| Delete-Btn | From post detail view, click Delete. Button is only visible after Login. | User is directed to delete page which prompts user to conform delete action. For posts, an additional pop-up prompts confirmation |
+| Confirm Delete Post | On delete page, click Delete Post | User is taken back to post list |
+| Confirm Delete Comment | On delete page, click Delete Comment | User is taken back to post |
+| Cancel | On delete page, click Cancel | User is taken back to post |
+
+[:arrow_up:](#top)
+### Register
+Account creation for unauthenticated users
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Sign Up form | Go to Register via nav link | Renders form input fields Username, Email (optional), Password, Password (confirm) |
+| Submit | Fill in form fields, click Sign Up | Form closes itself, user is redirected to homepage and shown as logged in |
+| Incomplete form | Leave one or more fields empty, click Sign Up. | User is prompted to fill out missing fields |
+
+### Login
+Signing into existing account (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Login form | Go to login form via link in navbar | Renders form input fields Username, Password, Remember me (checkbox) |
+| Submit | Fill in form fields accordingly, click Sign In | User is redirected to homepage, shown as logged in in header |
+| Incomplete form | Leave any field empty and click Sign In | User remains on Sign In form and is prompted to fill out missing fields |
+
+[:arrow_up:](#top)
+### Logout
+Allows user to sign out of account (authenticated users only)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Logout form | When authenticated, click on Logout in nav bar | User is directed to logout page, asking user to confirm logout |
+| Sign Out | On Sign Out page, click Sign Out | User is redirected to homepage, navbar changes to unauthenticated user view |
+
+[:arrow_up:](#top)
+### Social Links
+Links to social media sites located in footer (available to all users)
+| Feature | Action | Expected Result |
+| --- | --- | --- |
+| Link Icons in Footer | Click on any of the social media icons | New tab opens with respective social media site |
+
+# Fixed Bugs
+The code worked well until implementing Cloudinary for media storage.
+The first error message encountered was: "Organiser name cannot be null."
+Since all organisers listed had names, I suspected the issue might be related to the images. To troubleshoot, I added a custom display_image method to the Django admin panel. This method checks for the presence of an image, and by ensuring the image field was correctly handled, the error was resolved.
+
+![Screenshot 2025-01-27 213426](https://github.com/user-attachments/assets/20d8b928-a9a8-40b2-95a7-7dcabdcaf76a)
+
+Next, the default image was no longer shown. I found a quick fix for this in Slack.
+
+![Screenshot 2025-01-27 213539](https://github.com/user-attachments/assets/980284ee-1edc-4adc-935c-dee1e6cf63b9)
+
+[:arrow_up:](#top)
+#### Known error
+Throughout the code I use Organisator instead of organiser. It wasn't until I spoke to my facilitator Kay at a weekly stand-up session that I realised I had used the German word. As the site is aimed at a predominantly German audience and I was planning to translate the site into German after the course anyway, I decided to leave this mistake. In conversation with Kay, I also realised that native English speakers are still able to understand the basic idea.
+
+[:arrow_up:](#top)
+# Technologies Used
+## Work Environments and Hosting
+- [Balsamiq](https://balsamiq.com/) Wireframes
+- [GitHub](https://github.com/) Version control
+- [GitPod](https://gitpod.io/) IDE
+- [Heroku](https://heroku.com/) Site hosting
+- [Cloudinary](https://cloudinary.com/) Hosting static and media files
+- [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Used for front-end developement
+## Python and Django Libraries
+- [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/) Python HTTP server for WSGI applications
+- [psycopg2](https://pypi.org/project/psycopg2/) PostgreSQL Database adapter
+- [Pillow](https://pypi.org/project/Pillow/) Python Imaging Library
+- [django-storages](https://django-storages.readthedocs.io/en/latest/) collection of custom storage backends for Django
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/) User authentication
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) Control rendering behaviour of Django forms
+
+[:arrow_up:](#top)
+## Deployment
+#### Heroku Deployment
+This site was deployed to and is currently hosted on the Heroku platform. The steps for deploying to Heroku, using PostgreSQL as the database host, are as follows:
+1. Prepare Requirements
+   - Generate a requirements.txt file by saving all project dependencies.
+2. Set Up a Heroku App
+   - Log in (or sign up) to Heroku.
+   - Click New, then select Create new app.
+   - Provide a unique app name and select the Europe region.
+3. Add Configuration Variables
+   - Go to the Settings tab, navigate to Config Vars, and reveal the section.
+   - Add all variables from your environment file (env.py) to Heroku’s Config Vars.
+4. Connect GitHub Repository
+   - Under the Deploy tab, choose GitHub as the deployment method.
+   - Search for your GitHub repository and click Connect.
+5. Update Django Settings
+   - Add the Heroku app’s URL to the ALLOWED_HOSTS list.
+   - Ensure DEBUG is set to False for production.
+6. Collect Static Files
+   - Gather all static files for the project to prepare them for deployment.
+7. Create a Procfile
+   - In the root directory, create a Procfile to instruct Heroku to run the app.
+8. Deploy the Code
+   - Enable automatic deploys or manually deploy the main branch through Heroku’s dashboard.
+
+[:arrow_up:](#top)
+## Development
+The following options are available to work with this code or run in a local environment.
+
+### Fork
+- Log into GitHub and navigate to the repository you want to fork.
+- Click the Fork button in the top-right corner.
+- Choose a different owner if needed.
+- Click Create Fork to confirm.
+- The repository is now copied to your account, ready to be cloned or modified.
+
+### Clone
+- Log into GitHub and navigate to the repository you want to clone.
+- Click the Code button and copy the URL (HTTPS, SSH, or GitHub CLI).
+- Open your terminal and navigate to the folder where you want the repository.
+- Run the command git clone <repository-url>.
+- The repository is now downloaded to your local machine and ready to be worked on.  
+
+[:arrow_up:](#top)
+## Credits
+1. Content
+   - The skeleton of this project is based on the I Think Therefore I Blog walkthrough, provided by [Code Institute](https://codeinstitute.net/de/)
+   - The code for FAQ and Contact Form was taken from my PP5 Outdoor Queens
+   - For the forum I also used the tutorial provided by [Reintech](https://reintech.io/blog/django-forum-tutorial-build-a-forum-in-django-step-by-step-guide-for-software-developers)
+2. Media
+   - All icons were sourced from FontAwesome and are used under their license.
+   - All logos come directly from the respective organisers.
+   - The default image was taken from [unsplash](https://unsplash.com/de)
