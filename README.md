@@ -228,6 +228,19 @@ A forum has been added to the website, allowing users to perform full CRUD (Crea
    - To keep the overview clean, you could set that events are automatically deleted if they are in the past.
 
 [:arrow_up:](#top)
+# Database Design
+The initial idea was that each organiser would host several events. In different cities on different days. This results in a unique combination of organiser, date and location.
+Each event can only have one organiser.
+
+![Screenshot 2025-01-28 083840](https://github.com/user-attachments/assets/8126c546-4529-49bd-be4a-602ceb256c22)
+
+The basic idea behind the creation of the forum was similar. There can be several comments on each post, but each comment is clearly assigned to a post.
+
+![Screenshot 2025-01-28 091236](https://github.com/user-attachments/assets/ae562674-8d17-4a3d-9b35-30f9c37d827e)
+
+Users can let off steam and write as much as they like.
+
+[:arrow_up:](#top)
 # Testing
 ## Validator Testing
 ### HTML [W3C validator](https://validator.w3.org/)
