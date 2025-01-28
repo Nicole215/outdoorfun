@@ -23,6 +23,10 @@ The design and functionality of this website focus on providing a clear and intu
 - Navigate the site without distractions or unnecessary complexity.
 
 [:arrow_up:](#top)
+### Agile
+As a convinced pen and paper person, I created a rough overview list on paper and entered it in my calendar, divided into daily tasks. I have created a Kanban board for the interested reader, which does not exactly reflect the development process, but provides an overview of the basic ideas of the tasks involved.
+
+[:arrow_up:](#top)
 # Design
 ## Color Choice
 The design aims to evoke the natural and outdoor elements associated with hiking and mud runs:
