@@ -102,7 +102,7 @@ For text, buttons and links I used the **Grey Friends** color palette suggested 
 ![Screenshot 2025-01-26 173821](https://github.com/user-attachments/assets/c265c4f1-4f8e-4fbc-a6ff-ae851c428638)
 
 #### Search bar
-- Users can search the events list by city, country organiser and other criteria
+- Users can search the events list by city, country, organiser and other criteria
 
 [:arrow_up:](#top)
 #### Organiser detailed view
@@ -389,7 +389,7 @@ Signing into existing account (authenticated users only)
 | Feature | Action | Expected Result |
 | --- | --- | --- |
 | Login form | Go to login form via link in navbar | Renders form input fields Username, Password, Remember me (checkbox) |
-| Submit | Fill in form fields accordingly, click Sign In | User is redirected to homepage, shown as logged in in header |
+| Submit | Fill in form fields accordingly, click Sign In | User is redirected to homepage, shown as logged in |
 | Incomplete form | Leave any field empty and click Sign In | User remains on Sign In form and is prompted to fill out missing fields |
 
 [:arrow_up:](#top)
@@ -426,6 +426,7 @@ Throughout the code I use Organisator instead of organiser. It wasn't until I sp
 # Technologies Used
 ## Work Environments and Hosting
 - [Balsamiq](https://balsamiq.com/) Wireframes
+- [DBDiagram](https://dbdiagram.io/d) ERD
 - [GitHub](https://github.com/) Version control
 - [GitPod](https://gitpod.io/) IDE
 - [Heroku](https://heroku.com/) Site hosting
